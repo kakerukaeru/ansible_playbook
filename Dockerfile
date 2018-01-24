@@ -13,8 +13,12 @@ RUN \
     py-pip \
     py-setuptools \
     py-yaml \
-    tar && \
-  pip install --upgrade pip python-keyczar && \
+    tar \
+    gcc \
+    python-dev \
+    musl-dev \
+    linux-headers && \
+  pip install --upgrade pip python-keyczar shade && \
   rm -rf /var/cache/apk/*
 
 RUN mkdir /etc/ansible/ /ansible
