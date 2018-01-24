@@ -18,7 +18,7 @@ RUN \
     python-dev \
     musl-dev \
     linux-headers \
-    sshpass \&& \
+    sshpass && \
   pip install --upgrade pip python-keyczar shade && \
   rm -rf /var/cache/apk/*
 
