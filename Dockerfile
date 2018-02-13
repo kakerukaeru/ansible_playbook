@@ -19,7 +19,7 @@ RUN \
     musl-dev \
     linux-headers \
     sshpass && \
-  pip install --upgrade pip python-keyczar shade && \
+  pip install --upgrade pip python-keyczar shade netaddr && \
   rm -rf /var/cache/apk/*
 
 RUN mkdir /etc/ansible/ /ansible
